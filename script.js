@@ -34,6 +34,33 @@ if (backToTop) {
   });
 }
 
+const revealTargets = document.querySelectorAll(
+  ".hero h1, .hero-text, .hero-actions, .stats div, .hero-card, .section h2, .section-intro, .service-card, .project-card, .past-links-grid a, .card, .contact-list a, .contact-form input, .contact-form textarea, .contact-form button"
+);
+
+revealTargets.forEach((item, index) => {
+  item.classList.add("reveal-item");
+  item.style.setProperty("--reveal-delay", `${(index % 6) * 55}ms`);
+});
+
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: "0px 0px -30px 0px" }
+  );
+
+  revealTargets.forEach((item) => revealObserver.observe(item));
+} else {
+  revealTargets.forEach((item) => item.classList.add("is-visible"));
+}
+
 const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".project-card");
 
