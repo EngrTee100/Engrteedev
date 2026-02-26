@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Engrtee Dev is a professional web developer portfolio showcasing projects, tools, and services." />
+  <title>Engrtee Dev | Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="logo">Engrtee<span>Dev</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#tools">Tools</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Professional Web Developer</p>
+          <h1>Building fast, modern, and scalable digital experiences</h1>
+          <p class="hero-text">
+            Hi, I’m Engrtee — I design and develop websites and web applications that are responsive,
+            secure, SEO-ready, and tailored for business growth.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Hire Me</a>
+          </div>
+          <div class="stats">
+            <div><strong>30+</strong><span>Projects Completed</span></div>
+            <div><strong>5+</strong><span>Years Experience</span></div>
+            <div><strong>98%</strong><span>Client Satisfaction</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>What You Get</h3>
+          <ul>
+            <li>Professional UI/UX design implementation</li>
+            <li>Performance optimization and accessibility</li>
+            <li>API integration and backend connectivity</li>
+            <li>Deployment support and maintenance</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container split">
+        <div>
+          <h2>About Engrtee Dev</h2>
+          <p>
+            I help startups, businesses, and personal brands establish a strong online presence with
+            clean code, reliable architecture, and user-centered interfaces.
+          </p>
+          <p>
+            My workflow combines modern frontend engineering, practical backend solutions, and product-focused thinking.
+            Every project is built with scalability, speed, and maintainability in mind.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Core Expertise</h3>
+          <ul class="checks">
+            <li>Responsive Website Development</li>
+            <li>Landing Page & Conversion Optimization</li>
+            <li>E-commerce and Payment Integration</li>
+            <li>Portfolio and Business Websites</li>
+            <li>Web App Frontend Development</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <h2>Professional Services</h2>
+        <div class="cards-grid">
+          <article class="service-card">
+            <h3>Custom Website Development</h3>
+            <p>Tailored websites built for speed, SEO visibility, and conversion-ready user flows.</p>
+          </article>
+          <article class="service-card">
+            <h3>Frontend Engineering</h3>
+            <p>Modern and maintainable interfaces with reusable components and clean architecture.</p>
+          </article>
+          <article class="service-card">
+            <h3>Backend Integration</h3>
+            <p>Secure API integration, databases, auth systems, and smooth data handling.</p>
+          </article>
+          <article class="service-card">
+            <h3>Website Maintenance</h3>
+            <p>Ongoing updates, bug fixes, monitoring, and performance improvements.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <div class="container">
+        <h2>Professional Tools & Technologies</h2>
+        <p class="section-intro">A complete stack of modern development tools used to deliver high-quality products.</p>
+        <div class="tools-wrap">
+          <div>
+            <h4>Frontend</h4>
+            <div class="tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Tailwind CSS</span><span>Bootstrap</span>
+            </div>
+          </div>
+          <div>
+            <h4>Backend</h4>
+            <div class="tags">
+              <span>Node.js</span><span>Express</span><span>REST API</span><span>MongoDB</span><span>MySQL</span><span>Firebase</span><span>JWT Auth</span>
+            </div>
+          </div>
+          <div>
+            <h4>DevOps & Workflow</h4>
+            <div class="tags">
+              <span>Git</span><span>GitHub</span><span>Vercel</span><span>Netlify</span><span>Docker</span><span>Postman</span><span>CI/CD</span><span>Agile</span>
+            </div>
+          </div>
+          <div>
+            <h4>Quality & Design</h4>
+            <div class="tags">
+              <span>Figma</span><span>Accessibility (WCAG)</span><span>Lighthouse</span><span>Jest</span><span>Responsive Testing</span><span>SEO Tools</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="project-filters" id="projectFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="business">Business</button>
+          <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+          <button class="filter-btn" data-filter="app">Web App</button>
+        </div>
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card" data-category="business">
+            <h3>Corporate Agency Website</h3>
+            <p>Multi-page business platform with SEO optimization and inquiry workflow.</p>
+            <a href="#contact">Request Similar Project</a>
+          </article>
+          <article class="project-card" data-category="ecommerce">
+            <h3>Online Store Platform</h3>
+            <p>Product catalog, cart system, checkout process, and integrated online payment.</p>
+            <a href="#contact">Request Similar Project</a>
+          </article>
+          <article class="project-card" data-category="app">
+            <h3>Task Management Dashboard</h3>
+            <p>Interactive web app with authentication, analytics cards, and API-driven data.</p>
+            <a href="#contact">Request Similar Project</a>
+          </article>
+          <article class="project-card" data-category="business">
+            <h3>Personal Brand Portfolio</h3>
+            <p>High-converting personal website designed for credibility and lead generation.</p>
+            <a href="#contact">Request Similar Project</a>
+          </article>
+        </div>
+        <div class="past-project-links card">
+          <h3>Past Project Links</h3>
+          <p class="section-intro">Add your real client/project URLs below so visitors can view your completed work.</p>
+          <div class="past-links-grid">
+            <a href="https://example.com/project-1" target="_blank" rel="noopener noreferrer">Project 1 — Live Website</a>
+            <a href="https://example.com/project-2" target="_blank" rel="noopener noreferrer">Project 2 — Live Website</a>
+            <a href="https://example.com/project-3" target="_blank" rel="noopener noreferrer">Project 3 — Web App</a>
+            <a href="https://example.com/project-4" target="_blank" rel="noopener noreferrer">Project 4 — E-commerce Store</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Development Process</h2>
+          <ol class="process">
+            <li><strong>Discovery:</strong> Understand goals, audience, and requirements.</li>
+            <li><strong>Design & Planning:</strong> Structure, content strategy, and user flow.</li>
+            <li><strong>Development:</strong> Build with clean, scalable, and tested code.</li>
+            <li><strong>Launch & Support:</strong> Deploy, monitor, and improve over time.</li>
+          </ol>
+        </div>
+        <div class="card quote-card">
+          <h3>Client Promise</h3>
+          <p>
+            Every project is delivered with attention to performance, reliability, maintainability,
+            and clear communication from start to finish.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Let’s Build Your Next Project</h2>
+        <p class="section-intro">Send your project details and get a professional web solution tailored to your goals.</p>
+        <div class="contact-layout">
+          <div class="card contact-info-card">
+            <h3>Contact Information</h3>
+            <p class="contact-note">Reach Engrtee Dev through any of these channels:</p>
+            <div class="contact-list">
+              <a href="mailto:egbewale08139760374@gmail.com"><strong>Email:</strong> egbewale08139760374@gmail.com</a>
+              <a href="tel:08142411239"><strong>Phone:</strong> 08142411239</a>
+              <a href="https://wa.me/2348142411239" target="_blank" rel="noopener noreferrer"><strong>WhatsApp:</strong> 08142411239</a>
+              <a href="https://www.linkedin.com/in/engrteedev" target="_blank" rel="noopener noreferrer"><strong>LinkedIn:</strong> Professional profile</a>
+              <a href="https://github.com/engrteedev" target="_blank" rel="noopener noreferrer"><strong>GitHub:</strong> Code repositories</a>
+              <a href="https://x.com/engrteedev" target="_blank" rel="noopener noreferrer"><strong>X (Twitter):</strong> @engrteedev</a>
+              <a href="https://www.instagram.com/engrteedev" target="_blank" rel="noopener noreferrer"><strong>Instagram:</strong> @engrteedev</a>
+              <a href="https://www.youtube.com/@engrteedev" target="_blank" rel="noopener noreferrer"><strong>YouTube:</strong> Tutorials & demos</a>
+              <a href="https://calendly.com/engrteedev" target="_blank" rel="noopener noreferrer"><strong>Book a Meeting:</strong> Schedule a call</a>
+            </div>
+            <p class="contact-meta"><strong>Location:</strong> Lagos, Nigeria (Remote worldwide)</p>
+            <p class="contact-meta"><strong>Business Hours:</strong> Monday - Saturday, 9:00 AM - 7:00 PM (WAT)</p>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+            <input type="text" id="project" name="project" placeholder="Project Type (e.g., Business Website)" required />
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-message" id="formMessage"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Engrtee Dev. All rights reserved.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
