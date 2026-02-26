@@ -18,6 +18,22 @@ if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
 
+const logoHome = document.getElementById("logoHome");
+if (logoHome) {
+  logoHome.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+const backToTop = document.getElementById("backToTop");
+if (backToTop) {
+  backToTop.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
 const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".project-card");
 
